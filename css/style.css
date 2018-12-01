@@ -518,12 +518,12 @@ ul.team-icons.new-inf li {
 .right-side-img-tem-inside {
     float: left;
     width: 60%;
-    background: url(../images/img3.jpg) no-repeat center;
+    /* background: url(../images/img3.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -ms-background-size: cover;
+    -ms-background-size: cover; */
     min-height: 30vw;
 }
 
