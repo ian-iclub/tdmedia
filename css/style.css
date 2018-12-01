@@ -74,12 +74,12 @@ body img {
 /*-- header --*/
 
 header {
-    -webkit-box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+    /* -webkit-box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05); */
     position: fixed;
     width: 100%;
     z-index: 99;
-    background: #105ae4;
+    background: rgba(255, 255, 255, 0);
 }
 
 .navbar-light .navbar-brand,
@@ -99,12 +99,16 @@ header {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #d1dff9;
+    color: #FE9900;
+    background-color: #fff;
+    border-radius: 0.8em
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-    color: #b7cdf7;
+    color: #FE9900;
+    background-color: #fff;
+    border-radius: 0.8em
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -112,7 +116,8 @@ header {
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-    padding: 0 14px;
+    padding: .5em 20px;
+    margin: 0.2em;
 }
 
 .dropdown-item {
@@ -168,12 +173,12 @@ header {
 /*-- banner-w3layouts --*/
 
 #home {
-    background-image: linear-gradient(to left bottom, #0652dd, #0d58e2, #145de7, #1963eb, #1e68f0);
+    background-image: linear-gradient(to top, rgb(255, 255, 255), #FE9900);
     position: relative;
 }
 
 .banner-w3layouts-info p {
-    color: #b1d1f3;
+    color: #1963eb;
     text-align: justify;
 }
 
@@ -191,7 +196,7 @@ header {
     padding: 11px 31px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #0c57e1;
+    color: #FE9900;
     border-radius: 59px;
     display: inline-block;
     box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
@@ -202,7 +207,7 @@ header {
 }
 
 .banner-w3layouts-info a:hover {
-    background: #0c57e1;
+    background: #FE9900;
     color: #fff;
 }
 
@@ -304,16 +309,19 @@ h3.tittle {
     -ms-transition: 2s all;
     -o-transition: 2s all;
     box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .bottom-gd:hover,
 .bottom-gd2-active {
-    background: #1963eb !important;
+    background: #FE9900 !important;
     transition: 2s all;
     -webkit-transition: 2s all;
     -moz-transition: 2s all;
     -ms-transition: 2s all;
     -o-transition: 2s all;
+    cursor:auto;
 }
 
 .bottom-gd:hover.f1 i,
@@ -365,7 +373,7 @@ h3.tittle {
 }
 
 .fea.active {
-    background: #1963eb;
+    background: #FE9900;
 }
 
 .fea.active p,
