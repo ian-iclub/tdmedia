@@ -15,7 +15,8 @@
 
 .portfolio img {
   width: 100%;
-  height: auto;
+  height: 27ex;
+  /* height: auto; */
 }
 
 .desc {
