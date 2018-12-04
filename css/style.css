@@ -112,6 +112,22 @@ header {
     border-radius: 0.8em
 }
 
+.scrolled
+{
+    background-color: #FE9900;
+    position: fixed;
+    transition: background-color 1s;
+    height: 8ex;
+}
+.scrolled-transition
+{ 
+    /* opacity: 0.5; 
+    transition: opacity 1s;
+    -webkit-transition: 1s ease-in; */
+    margin-top: -1ex;
+    transition: background-color 1s, margin-top 1s;
+}
+
 .navbar-light .navbar-nav .nav-link,
 .dropdown-item {
     color: #fff;
@@ -442,7 +458,7 @@ h3.tittle {
 .team-info h3 {
     font-size: 1.2em;
     font-weight: 700;
-    color: #FE9900;
+    color: #262631;
     margin-bottom: 0.8em;
     text-transform: uppercase;
 }

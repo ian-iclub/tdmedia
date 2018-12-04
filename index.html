@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <h1>
                         <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-ravelry" aria-hidden="true"></i></a> -->
-                        <a class="navbar-brand" href="index.html"><img src="images/logo-light.png" alt="logo" style="width:3em"></a>
+                        <a class="navbar-brand" href="index.html"><img class="header-logo" src="images/logo-light.png" alt="logo" style="width:3em"></a>
                         
                     </h1>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="header-right">
                             <!-- <a href="signin.html" class="signin mr-4"> Sign in <i class="fas fa-sign-in-alt"></i></a>
                             <a href="register.html" class="contact">Get Started</a> -->
-                            <ul class="navbar-nav ml-4 m-auto">
+                            <ul class="navbar-nav ml-4 m-auto" id="top">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                                 </li>
@@ -896,7 +896,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <div class="footer-text">
                         <!-- <p data-aos="fade-up">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur elit.</p> -->
-                        <div style="">
+                        <div>
                             <ul class="navbar-nav ml-4 m-auto" data-aos="fade-up">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -1065,6 +1065,65 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 easingType: 'easeOutQuart'
             });
 
+        });
+
+        // Cache selectors
+        var topMenu = $("#top"),
+            topMenuHeight = topMenu.outerHeight()+15,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+            });
+
+        // Bind to scroll
+        $(window).scroll(function(){
+        // Get container scroll position
+        var fromTop = $(this).scrollTop()+topMenuHeight;
+
+        // Get id of current scroll item
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+            return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : "";
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href='#"+id+"']").parent().addClass("active");
+        });
+
+
+        $(function () 
+        {
+            $(document).scroll(function () 
+            {
+                var $nav = $(".py-1");
+                var $topdiv = $('.banner-w3layouts');
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $topdiv.height());
+                if ($(this).scrollTop() > $topdiv.height()) 
+                { 
+                    $('.header-logo').attr('src','images/logo-small.png');
+                    $('.header-logo').addClass('scrolled-transition');
+                } 
+                else
+                {
+                    $('.header-logo').attr('src','images/logo-light.png');
+                    $('.header-logo').removeClass('scrolled-transition');
+                }
+            });
+        });
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
         });
 
     </script>
