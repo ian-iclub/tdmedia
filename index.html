@@ -93,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <a href="register.html" class="contact">Get Started</a> -->
                             <ul class="navbar-nav ml-4 m-auto" id="top">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#whatwedo">What we do<span class="sr-only">(current)</span></a>
@@ -115,7 +115,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </header>
         <!-- //header -->
         <!-- banner-w3layouts -->
-        <section class="banner-w3layouts">
+        <section class="banner-w3layouts" id="home">
             <div class="container">
                 <div class="row banner-w3layouts-grids">
                     <div class="col-lg-6 banner-w3layouts-info">
@@ -374,7 +374,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!--//middle section -->
     <!-- portfolio -->
-    <section class="portfolio-flyer pt-5 pb-5" id="work">
+    <section class="portfolio-flyer pt-5 pb-5" id="work" style="padding-top:0ex !important">
         <div class="container py-lg-5">
             <h3 class="tittle text-uppercase text-center my-lg-5 my-3"><span class="sub-tittle"> Recent Works </span>Stunning Projects</h3>
             <!-- <div class="row mt-lg-4 mt-3">
@@ -899,7 +899,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div>
                             <ul class="navbar-nav ml-4 m-auto" data-aos="fade-up">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#whatwedo">What we do<span class="sr-only">(current)</span></a>
@@ -1118,12 +1118,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             });
         });
 
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            event.preventDefault();
+        // $(document).on('click', 'a[href^="#"]', function (event) {
+        //     event.preventDefault();
 
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
+        //     $('html, body').animate({
+        //         scrollTop: $($.attr(this, 'href')).offset().top
+        //     }, 500);
+        // });
+        $('a[href*=\\#]').on('click', function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
         });
 
     </script>
