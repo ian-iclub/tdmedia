@@ -117,15 +117,15 @@ header {
     background-color: #FE9900;
     position: fixed;
     transition: background-color 1s;
-    height: 8ex;
+    height: 7ex;
 }
 .scrolled-transition
 { 
     /* opacity: 0.5; 
     transition: opacity 1s;
     -webkit-transition: 1s ease-in; */
-    margin-top: -1ex;
-    transition: background-color 1s, margin-top 1s;
+    margin-top: -.3ex;
+    transition: 1s all;
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -178,7 +178,7 @@ header {
 }
 
 .navbar {
-    padding: 0.5rem 0rem;
+    padding: 0rem 0rem;
 }
 
 .dropdown-toggle::after {
@@ -332,7 +332,7 @@ h3.tittle {
     margin-right: 1em;
 }
 
-.bottom-gd:hover,
+/* .bottom-gd:hover, */
 .bottom-gd2-active {
     background: #FE9900 !important;
     transition: 2s all;
@@ -343,17 +343,29 @@ h3.tittle {
     cursor:auto;
 }
 
+/* .mazter1:hover
+{
+    background-image: none !important;
+    text-emphasis: none;
+    transition: 1s all;
+}
+.mazter1:hover
+{
+    color:rgba(0, 0, 0, .5) !important;
+    transition: 1s all;
+} */
+
 .bottom-gd:hover.f1 i,
 .bottom-gd2-active span {
     color: #fff;
 }
 
-.bottom-gd:hover.bottom-gd p,
+/* .bottom-gd:hover.bottom-gd p, */
 .bottom-gd2-active p {
     color: #fff;
 }
 
-.bottom-gd:hover h3,
+/* .bottom-gd:hover h3, */
 .bottom-gd2-active h3 {
     color: #fff;
 }
@@ -458,7 +470,7 @@ h3.tittle {
 .team-info h3 {
     font-size: 1.2em;
     font-weight: 700;
-    color: #262631;
+    color: #FE9900;
     margin-bottom: 0.8em;
     text-transform: uppercase;
 }
@@ -506,7 +518,7 @@ ul.team-icons.new-inf li {
 
 .team-gd {
     padding: 3em 2em;
-    background: #f8f9fa;
+    background: #262631;
     transition: 2s all;
     -webkit-transition: 2s all;
     -moz-transition: 2s all;
@@ -517,8 +529,10 @@ ul.team-icons.new-inf li {
 }
 
 .team-gd.second {
-    border-left: 1px solid #e4e6e6;
-    border-right: 1px solid #e4e6e6;
+    /* border-left: 1px solid #e4e6e6;
+    border-right: 1px solid #e4e6e6; */
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
 }
 
 .team-gd img {
@@ -974,7 +988,7 @@ label.anim a {
     display: inline;
     letter-spacing: .5px;
     text-transform: capitalize;
-    float: left;
+    /* float: left; */
     font-weight: 400;
 }
 
@@ -1006,9 +1020,9 @@ p.para-sign {
     -o-border-radius: 5px;
 }
 
-.sign-info input[type="text"],
+/* .sign-info input[type="text"],
 .sign-info input[type="email"],
-.sign-info input[type="password"] {}
+.sign-info input[type="password"] {} */
 
 .sign-info input[type="submit"] {
     color: #0d58e2;
@@ -1065,13 +1079,13 @@ label.anim a {
     display: inline;
     letter-spacing: .5px;
     text-transform: capitalize;
-    float: left;
+    /* float: left; */
 }
 
 label.anim a {
     display: inline-block;
     text-decoration: none;
-    float: right;
+    /* float: right; */
 }
 
 input.checkbox {
