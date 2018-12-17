@@ -51,12 +51,14 @@
 .nav a:hover {
   background:#ea1d5d!important;
   color: #fff;
+  background: #1963eb !important;
 }
 
 .nav .active {
   background: #1963eb !important;
   border: transparent;
   color: #fff;
+  background:#FE9900 !important;
 }
 #image-gallery .modal-footer{
   display: block;
