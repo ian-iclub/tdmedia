@@ -82,6 +82,17 @@ header {
     background: rgba(255, 255, 255, 0);
 }
 
+/* @media(max-width: 990px) {
+    #small.navbar-nav.ml-4.m-auto {
+        background-color: #262632 !important;
+    }
+    .nav-item-small {
+        width: 30%;
+        margin-left: 40%;
+        text-align: center;
+    }
+} */
+
 .navbar-light .navbar-brand,
 .footer h2 a {
     color: #fff;
@@ -1578,7 +1589,7 @@ ul.social_section_1info a:hover {
     }
 }
 
-@media(max-width:991px) {
+@media(max-width:991px) {    
     .banner-w3layouts-info {
         margin-top: 0em;
         padding-right: 0;
