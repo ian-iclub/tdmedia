@@ -972,7 +972,7 @@
         }
     </style>
     <footer>
-        <section class="footer footer_1its py-5" style="background-image: url('images/footer2.jpg');background-size: cover !important;background-position-y: -35ex">
+        <section class="footer footer_1its py-5" style="background-image: url('images/footer2.jpg');background-size: cover !important;background-position-y: -30ex">
             <div class="container py-md-4" style="padding-bottom: 0ex !important;" >
 
                 <!-- <div class="row footer-top mb-md-5 mb-4">
@@ -1233,6 +1233,8 @@
 
         // Bind to scroll
         $(window).scroll(function(){
+            // $('.nav-item').removeClass("active")
+
         // Get container scroll position
         var fromTop = $(this).scrollTop()+topMenuHeight;
 
@@ -1245,12 +1247,13 @@
         cur = cur[cur.length-1];
         var id = cur && cur.length ? cur[0].id : "";
         // Set/remove active class
+        
         menuItems
             .parent().removeClass("active")
             .end().filter("[href='#"+id+"']").parent().addClass("active");
         });
 
-
+        // Change of logo on scroll
         $(function () 
         {
             $(document).scroll(function () 
