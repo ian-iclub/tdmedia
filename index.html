@@ -54,9 +54,8 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-4 m-auto">
+                        <ul class="navbar-nav ml-4 m-auto small">
                             <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  More info <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -85,24 +84,44 @@
                         <!-- <div>     -->
                             <!-- <a href="signin.html" class="signin mr-4"> Sign in <i class="fas fa-sign-in-alt"></i></a>
                             <a href="register.html" class="contact">Get Started</a> -->
-                            <ul class="navbar-nav ml-4 m-auto" id="top">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                            <style>
+                                @media(max-width: 990px) {
+                                .navbar-nav-small {
+                                    background-color: #fe9900;
+                                    flex-direction: row;
+                                    width:100% !important;
+                                }
+                                .nav-item-small {
+                                    /* width: 30%; */
+                                    padding-left: 3%;
+                                    text-align: center;
+                                }
+                                .nav-link-small {
+                                    border-radius: 0.4ex !important;
+                                }
+                                .wwd {
+                                    margin-left: 5ex !important; 
+                                }
+                            }
+                            </style>
+                            <ul class="navbar-nav navbar-nav-small ml-4 m-auto" id="top">
+                                <li class="nav-item nav-item-small active">
+                                    <a class="nav-link nav-link-small" href="#home">Home<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#whatwedo">What we do<span class="sr-only">(current)</span></a>
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link nav-link-small" href="#whatwedo">What we do<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link nav-link-small" href="#services">Services<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#work">Work<span class="sr-only">(current)</span></a>
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link nav-link-small" href="#work">Work<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link nav-link-small" href="blog.html">Blog<span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact Us<span class="sr-only">(current)</span></a>
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link nav-link-small" href="#contact">Contact Us<span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -173,23 +192,42 @@
                     </div>
                 </div>
                 <!-- //services -->
+                <style>
+                        @media(max-width: 990px) {                            
+                        .wwd1 {
+                            margin-left: auto !important; 
+                            margin-right: auto !important;
+                        }
+                        
+                        .wwd2 {
+                            margin-left: auto !important; 
+                            margin-right: auto !important;
+                            margin-top: 7ex !important;
+                        }
+                        .wwd3 {
+                            margin-left: auto !important; 
+                            margin-right: auto !important;
+                            margin-top: 7ex !important;
+                        }
+                    }
+                    </style>
                 <div class="feature-grids row mb-lg-5 mb-3">
                     <div class="col-lg-4 p-0" data-aos="fade-up">
-                        <div class="bottom-gd p-5 mazter" style="width:45ex;margin-left:-5.5ex;height:60ex;border-radius:2ex;">
+                        <div class="bottom-gd p-5 wwd1 mazter" style="width:45ex;margin-left:-5.5ex;height:60ex;border-radius:2ex;">
                             <!-- <img src="images/animate.png" alt="" style="max-width: 100%;max-height: 100%;z-index:1;object-fit: contain;padding:0ex"> -->
                             <h3 class="my-3 mazter1"> <span class="fa fa-crosshairs" aria-hidden="true"></span> 2D & 3D Animation</h3>
                             <p class="mazter1">We take care of your animation needs right from pre-production to post production. Whether it is just a simple info graphic to complex 3D architecturial visualization for your project That’s because animation is a great way to get across lots of data or information that you can’t show in a single static infographic. From the IDEA to the FINAL PRODUCT! Contact us to discuss your specific needs.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 p-0" data-aos="fade-up">
-                        <div class="bottom-gd p-5" style="width:45ex;margin-left:-0.5ex;height:60ex;border-radius:2ex">
+                        <div class="bottom-gd p-5 wwd2" style="width:45ex;margin-left:-0.5ex;height:60ex;border-radius:2ex">
 
                             <h3 class="my-3"> <span class="fa fa-camera-retro" aria-hidden="true"></span> Video Production</h3>
                             <p>A picture is equal to a thousand words. A video is equal to 24900 words per second. Pair that with an equally creative and eager staff, your commercial production, reality tv, scripted show, documentary, or corporate video will exceed expectations. Whatever or wherever the story is. Whether the video is intended to motivate staff members, train them, excite shareholders or sell to customers, we have specialized proffessionals to help you achieve your goals.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 p-0" data-aos="fade-up">
-                        <div class="bottom-gd p-5" style="width:45ex;margin-left:5ex;height:60ex;border-radius:2ex">
+                        <div class="bottom-gd p-5 wwd3" style="width:45ex;margin-left:5ex;height:60ex;border-radius:2ex">
 
                             <h3 class="my-3"> <span class="fa fa-laptop" aria-hidden="true"></span> Graphic Design</h3>
                             <p>Whether it is just a design of your logo you want or a design for a T-shirt, whether it is for screen or for print, Rebrand your business with an original great new logo, business cards, letter heads and branded materials at a great deal, we got you.</p>
@@ -527,7 +565,7 @@
     <!--/model-->
     <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content serve">
                 <div class="modal-header text-left" style="border-bottom:none !important">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -925,6 +963,14 @@
     </section> -->
     <!--//newsletter-->
     <!--footer -->
+    <style>
+        @media(max-width:1023px) {
+            .footer {
+                background-position-y: 0ex !important;
+                background-size: 100% 100% !important;
+            }
+        }
+    </style>
     <footer>
         <section class="footer footer_1its py-5" style="background-image: url('images/footer2.jpg');background-size: cover;background-position-y: -35ex">
             <div class="container py-md-4" style="padding-bottom: 0ex !important;" >
@@ -985,7 +1031,7 @@
                         <!-- <p data-aos="fade-up">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur elit.</p> -->
                     <style>
                         @media (min-width: 576px) {
-                            .navbar-nav {
+                            .navbar-nav1 {
                                 flex-direction: row;
                             }
                             .nav-item2 {
@@ -996,7 +1042,7 @@
                         
                     </style>
                         <div>
-                            <ul class="navbar-nav ml-4 m-auto" data-aos="fade-up">
+                            <ul class="navbar-nav navbar-nav1 ml-4 m-auto" data-aos="fade-up">
                                 <li class="nav-item nav-item2">
                                     <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                                 </li>
