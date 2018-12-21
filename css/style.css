@@ -277,7 +277,9 @@ section.banner-w3layouts {
 
 .banner-w3layouts-info {
     margin-top: 4em;
-    padding-right: 3em;
+    /* padding-right: 3em; */
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .effect-w3 img:nth-child(4) {

@@ -41,11 +41,12 @@
 
 <body>
     <!-- mian-content -->
-    <div class="main-content" id="home">
+    <div class="main-content" id="home" style="background-image:url('images/blog.jpg')">
+    <!-- <img src="images/blog.jpg" alt="" style="width:100%;height:100%;position: absolute;object-fit: cover;"> -->
         <!-- header -->
         <header class="py-1">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class=" navbar navbar-expand-lg navbar-light">
                     <h1>
                         <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-ravelry" aria-hidden="true"></i></a> -->
                         <a class="navbar-brand" href="index.html"><img class="header-logo" src="images/logo.png" alt="logo" style="width:3em"></a>
@@ -59,9 +60,29 @@
                         <ul class="navbar-nav ml-4 m-auto">
                         </ul>
                         <div class="header-right">
-                            <ul class="navbar-nav ml-4 m-auto" id="top">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html" style="color: #ffffff !important; background-color:#FE9900 !important;border-radius: 0.8em;">Back to Home<span class="sr-only">(current)</span></a>
+                                <style>
+                                    @media(max-width: 990px) {
+                                    .navbar-nav-small {
+                                        background-color: #fe9900;
+                                        /* flex-direction: row; */
+                                        width:100% !important;
+                                    }
+                                    .nav-item-small {
+                                        /* width: 30%; */
+                                        padding-left: 3%;
+                                        text-align: center;
+                                    }
+                                    .nav-link-small {
+                                        border-radius: 0.4ex !important;
+                                    }
+                                    .wwd {
+                                        margin-left: 5ex !important; 
+                                    }
+                                }
+                                </style>
+                            <ul class="navbar-nav navbar-nav-small ml-4 m-auto" id="top">
+                                <li class="nav-item nav-item-small active">
+                                    <a class="nav-link nav-link-small" href="index.html" style="color: #ffffff !important; background-color:#FE9900 !important;border-radius: 0.8em;">Back to Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <!-- <li class="nav-item">
                                     <a class="nav-link" href="#whatwedo">What we do<span class="sr-only">(current)</span></a>
@@ -86,18 +107,38 @@
         </header>
         <!-- //header -->
         <!-- banner-w3layouts -->
-        <section class="banner-w3layouts" id="home" style="padding-top:10ex !important;background-image: linear-gradient(to bottom, rgb(255, 255, 255), #FE9900);">
-            <div class="container">
+        <style>
+            .banner-w3layouts-info a {
+                color:#FE9900 !important;
+                padding: 0% !important;
+                display: inline !important;
+                font-size: 1.0em !important;
+                background:none !important;
+                box-shadow: none !important;
+            }
+            .banner-w3layouts-info a:hover {
+                color:#FE9900 !important;
+                background:none !important;
+                box-shadow: none !important;
+            }
+            @media(max-width:991px) {
+               .container {
+                padding-right:4ex !important;
+               }
+            }
+        </style>
+        <section class="banner-w3layouts" id="home" style="padding-top:13ex !important;background-image: url('images/blog.jpg');">
+            <div class="container" style="background-color:#262631e5;padding-left:auto;padding-right:auto;">
                 <div class="row banner-w3layouts-grids">
-                    <div class=" banner-w3layouts-info">
+                    <div class=" banner-w3layouts-info" style="color:#fff">
                         <!-- <h2 data-aos="fade-up">Videos,
                         </h2> -->
-                        <h3 class="mb-3" data-aos="fade-up" style="text-align: center;color: #262631">ONLINE VISUAL IMAGE</h3>
-                        <p class="mb-4" data-aos="fade-up" style="font-size:1.2em; text-align: center">The new world of marketing is increasingly visual. It's no coincidence that the newest and fastest-growing social networks on the web -- like Pinterest, Instagram, and Snapchat -- are focused primarily on visual content. <br></p>
-                        <p class="mb-4" data-aos="fade-up" style="font-size:1.2em; text-align: center">So, how can marketers adapt to and leverage an increasingly visual social atmosphere? By implementing a strong visual branding strategy on social media.<br></p>
-                        <p class="mb-4" data-aos="fade-up" style="font-size:1.2em; text-align: center">Visual social branding refers to what your social media content looks like -- your profile picture, your cover photo, and especially your social posts. Great visuals on social media are important because the human brain is wired to read and understand images better and faster than words. Plus, visual content increases social engagement: Did you know that, according to a study by Socialbakers, images on Facebook constitute 93% of the most engaging posts compared with status updates, links, and even video?<br></p>
-                        <p class="mb-4" data-aos="fade-up" style="font-size:1.2em; text-align: center">The good news is that the four key ingredients of social media success -- consistent colors, fonts, imagery, and layouts -- are within your reach.</p>
-                    </div>
+                        <h3 class="mb-3" data-aos="fade-up" style="text-align: center;color: #fff">ONLINE VISUAL IMAGE</h3>
+                        <p class="mb-4" style="font-size:1.2em; text-align: center; color: #fff">The new world of marketing is increasingly visual. It's no coincidence that the newest and fastest-growing social networks on the web -- like Pinterest, Instagram, and Snapchat -- are focused primarily on visual content. <br></p>
+                        <p class="mb-4" style="font-size:1.2em; text-align: center; color: #fff">So, how can marketers adapt to and leverage an increasingly visual social atmosphere? By implementing a strong visual branding strategy on social media.<br></p>
+                        <p class="mb-4" style="font-size:1.2em; text-align: center; color: #fff">Visual social branding refers to what your social media content looks like -- your profile picture, your cover photo, and especially your social posts. Great visuals on social media are important because the human brain is wired to read and understand images <a href="https://blog.hubspot.com/marketing/visual-content-marketing-infographic">better and faster</a> than words. Plus, visual content increases social engagement: Did you know that, according to a <a href="https://www.socialbakers.com/blog/1749-photos-make-up-93-of-the-most-engaging-posts-on-facebook">study</a> by Socialbakers, images on Facebook constitute 93% of the most engaging posts compared with status updates, links, and even video?<br></p>
+                        <p class="mb-4" style="font-size:1.2em; text-align: center; color: #fff">The good news is that the four key ingredients of social media success -- consistent colors, fonts, imagery, and layouts -- are within your reach.</p>
+                    </div>; color: #fff
                     <!-- <div class="col-lg-6 banner-w3layouts-image">
                         <div class="effect-w3">
                             <img src="images/img.jpg" alt="" class="img-fluid image1">
@@ -113,36 +154,91 @@
         <!-- //banner-w3layouts -->
     </div>
     <!--/ab -->
+    <style>
+        @media(max-width:991px) {
+            .slider {
+            height: 80%;
+            overflow-y: auto;
+            }
+
+            .one {
+            font-weight: 500;
+            margin: 28rem 0 1rem;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            color:#fff;
+            }
+            .two {
+            margin: 9rem 0 1rem;
+            }
+            .three {
+            margin: 14rem 0 1rem;
+            }
+            .four {
+            margin: 20rem 0 1rem;
+            }
+            .slider__nav {
+                margin: 18rem 12px;
+            }
+        }
+
+        @media (max-width:576px) {
+            .slider {
+            height: 80%;
+            overflow-y: auto;
+            }
+
+            .one {
+            font-weight: 500;
+            margin: 35rem 0 1rem;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            color:#fff;
+            }
+            .two {
+            margin: 15rem 0 1rem;
+            }
+            .three {
+            margin: 21rem 0 1rem;
+            }
+            .four { 
+            margin: 29rem 0 1rem;
+            }
+            .slider__nav {
+                margin: 18rem 12px;
+            }
+        }
+    </style>
     <section class="about py-lg-5 py-md-5 py-3" id="whatwedo" style="background-color:#262631;padding-bottom:0em !important">
         <div class="container">
             <div class="inner-sec-wthree py-lg-5 " >
                 <h3 class="tittle text-uppercase text-center mb-lg-5 mb-3" data-aos="fade-up"><span class="sub-tittle" style="font-size:0.6em !important;">The 4 Ingredients of Social Media Success</span></h3>
                 <div class="feature-grids" style="height:45ex; margin-top: 0em !important;">
                     <div class="slider" data-aos="fade-up">
-                        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-                        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-                        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-                        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+                        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav slider__nav__one"/>
+                        <input type="radio" name="slider" title="slide2" class="slider__nav slider__nav__two"/>
+                        <input type="radio" name="slider" title="slide3" class="slider__nav slider__nav__three"/>
+                        <input type="radio" name="slider" title="slide4" class="slider__nav slider__nav__four"/>
 
                         <div class="slider__inner" style="padding-top: 0em !important;" >
                             <div class="slider__contents">
                                 <!-- <i class="slider__image fa fa-codepen"></i> -->
-                                <h2 class="slider__caption">1. A consistent color palette.</h2>
-                                <p class="slider__txt">If you look at the colors of any well known brand, you'll see that they use the same colors over and over again. In their logo, in their text, even their images. Two to four colors used consistently throughout all social media posts and marketing. Using the same colors over and over again will help consumers become familiar with a brand. <br> For example, notice how all of Cadbury’s social posts use its iconic purple color and white across its imagery, text, and logo. <br> Understanding color psychology helps to reflect the feelings evoked from your customers. For example, many tech companies -- like Facebook, Twitter, Dell, IBM, and HP -- use blue to symbolize trust, intelligence and progress. Virgin's vibrant red color scheme gives off bold and confident vibes, mirroring Richard Branson's own, distinct business methods.</p>
+                                <h2 class="slider__caption one">1. A consistent color palette.</h2>
+                                <p class="slider__txt">If you look at the colors of any well known brand, you'll see that they use the same colors over and over again. In their logo, in their text, even their images. Two to four colors used consistently throughout all social media posts and marketing. Using the same colors over and over again will help consumers become familiar with a brand. <br> For example, notice how all of Cadbury’s social posts use its iconic purple color and white across its imagery, text, and logo. <br> Understanding <a href="https://blog.hubspot.com/marketing/psychology-of-color">color psychology</a> helps to reflect the feelings evoked from your customers. For example, many tech companies -- like Facebook, Twitter, Dell, IBM, and HP -- use blue to symbolize trust, intelligence and progress. Virgin's vibrant red color scheme gives off bold and confident vibes, mirroring Richard Branson's own, distinct business methods.</p>
                             </div>
                             <div class="slider__contents">
                                 <!-- <i class="slider__image fa fa-newspaper-o"></i> -->
-                                <h2 class="slider__caption">2. Font pairings that match a brand’s personality.</h2>
+                                <h2 class="slider__caption two">2. Font pairings that match a brand’s personality.</h2>
                                 <p class="slider__txt">Like your a colourpalette, font choices should reflect a brand’s personality. A strong font or a simple one? Cute or elegant? <br> Three fonts for materials: a font for ther title/heading, a font for subtitles, and a font for body text.</p>
                             </div>
                             <div class="slider__contents">
                                 <!-- <i class="slider__image fa fa-television"></i> -->
-                                <h2 class="slider__caption">3. Appropriate imagery and filters</h2>
+                                <h2 class="slider__caption three">3. Appropriate imagery and filters</h2>
                                 <p class="slider__txt">Pick imagery that has a consistent theme. If you’re taking your own photos, make sure you keep your theme consistent, too. <br> Another important aspect of imagery is your brand filters. They add consistency to your graphics -- a big plus on social media. Take Corona for example, which uses a sun-drenched filter to give a "summery’ feel to its marketing graphics. <br> Like your other visual aspects, consistency is key.</p>
                             </div>
                             <div class="slider__contents">
                                 <!-- <i class="slider__image fa fa-diamond"></i> -->
-                                <h2 class="slider__caption">Finally! Ready to put your skills to action?</h2>
+                                <h2 class="slider__caption four">Finally! Ready to put your skills to action?</h2>
                                 <p class="slider__txt">Images, colors, fonts and layouts are all elements of graphic design that will play a huge role in making your brand image stand out. Considering up to 90% of information transmitted to the brain is visual, it’s no surprise that people respond well to great design. <br> In the time it took you to read this article, approximately 500,000 new posts would have appeared on Twitter, 3 million on Facebook, 15,000 on Instagram and many, many more <br> The social media advertising race is on, and your brand’s visual voice is what will get you ahead. So jump in and get started by getting your self a customized Online Image.</p>
                             </div>
                         </div>
@@ -154,9 +250,16 @@
     </section>
     
     
-    
+    <style>
+        @media(max-width:1023px) {
+            .footer {
+                background-position-y: 0ex !important;
+                background-size: 100% 100% !important;
+            }
+        }
+    </style>
     <footer>
-        <section class="footer footer_1its py-5" style="background-image: url('images/footer2.jpg');background-size: cover;background-position-y: -35ex">
+        <section class="footer footer_1its py-5" style="background-image: url('images/footer2.jpg');background-size: cover !important;background-position-y: -30ex">
             <div class="container py-md-4" style="padding-bottom: 0ex !important;" >
 
                 
@@ -173,6 +276,18 @@
                             }
                             .nav-item2 {
                                 width: 20%;
+                                
+                            }
+                        }
+
+                        @media (max-width:576px) {
+                            .nav-link2 {
+                                padding-left:15ex !important;
+                            }
+                        }
+                        @media (max-width:991px) {
+                            .nav-item2 {
+                                margin-left:-10ex;
                             }
                         }
                         
@@ -181,7 +296,7 @@
                         <div>
                             <ul class="navbar-nav ml-4 m-auto" data-aos="fade-up">
                                 <li class="nav-item nav-item2">
-                                    <a class="nav-link" href="index.html" style="padding-left:35ex;">Home<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link nav-link2" href="index.html" style="padding-left:35ex;">Home<span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>                        
@@ -277,8 +392,8 @@
             {
                 var $nav = $(".py-1");
                 var $topdiv = $('.banner-w3layouts');
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $topdiv.height());
-                if ($(this).scrollTop() > $topdiv.height()) 
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $topdiv.height()-600);
+                if ($(this).scrollTop() > $topdiv.height()-600) 
                 { 
                     $('.header-logo').attr('src','images/logo-small.png');
                     $('.header-logo').addClass('scrolled-transition');
