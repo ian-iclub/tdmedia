@@ -1671,8 +1671,9 @@ ul.social_section_1info a:hover {
 
     .right-side-img-tem-inside {
         min-height: 43vw;
-        float: left;
+        /* float: left; */
         width: 100%;
+        text-align: center;
     }
     .progress {
         margin-bottom: 2em;
